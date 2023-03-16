@@ -5,12 +5,12 @@ import './style.css';
 
 // p.s: we can also pass objects as props
 // functions can also be passed as props (because functions are first class objects in JS)
+// syntax for function props: (param1: Type1, param2: Type2, ...) => ReturnType;
 
 type Props = {
   who: string;
   message?: string;
 };
-
 
 const Hello: React.FC<Props> = ({ who, message }) => (
   <div>
